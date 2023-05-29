@@ -1,0 +1,18 @@
+.book-list-container {
+  width: 1000px;
+  height: fit-content;
+  margin: 30px auto 100px auto;
+
+  h2 {
+    margin-top: 70px;
+  }
+}
+
+.book-list {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 60px;
+  justify-items: center;
+}

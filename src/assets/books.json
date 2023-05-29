@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Идеальный программист. Как стать профессионалом разработки ПО",
+    "imageUrl": "https://cv9.litres.ru/pub/c/cover_415/11961798.webp",
+    "authors": "Роберт Мартин",
+    "year": 2011,
+    "rating": 5,
+    "isbn": "978-5-459-01044-2"
+  },
+  {
+    "name": "Практическое руководство по винокурению",
+    "imageUrl": "https://cv9.litres.ru/pub/c/cover_415/63995791.webp",
+    "authors": "Павел Иевлев",
+    "year": 2021,
+    "rating": 4,
+    "isbn": "978-5-04-088830-6"
+  },
+  {
+    "name": "7 навыков высокоэффективных людей",
+    "imageUrl": "https://cv8.litres.ru/pub/c/cover_415/4239285.webp",
+    "authors": "Стивен Кови",
+    "year": 1989,
+    "rating": 2,
+    "isbn": "978-5-9614-2021-0"
+  },
+  {
+    "name": "Цвет волшебства",
+    "imageUrl": "https://cv7.litres.ru/pub/c/cover_415/23578275.webp",
+    "authors": "Терри Пратчетт",
+    "year": 2011,
+    "rating": 5,
+    "isbn": "978-5-699-15629-0"
+  },
+  {
+    "name": "Психбольница в руках пациентов",
+    "imageUrl": "https://cv8.litres.ru/pub/c/cover_415/31736385.webp",
+    "authors": "Алан Купер",
+    "year": 2004,
+    "rating": 4,
+    "isbn": "978-5-4461-0674-5"
+  },
+  {
+    "name": "Интрижки мишки",
+    "imageUrl": "https://libking.ru/uploads/posts/new_books5/elena-galenko-intrizhki-mishki.jpg",
+    "authors": "Елена Вильоржевна Галенко",
+    "year": "",
+    "rating": 5,
+    "isbn": ""
+  },
+  {
+    "name": "Закон забвения",
+    "imageUrl": "https://cv9.litres.ru/pub/c/cover_415/69250696.webp",
+    "authors": "Роберт Харрис",
+    "year": 1989,
+    "rating": 2,
+    "isbn": "978-5-9614-2021-0"
+  },
+  {
+    "name": "Дневники. Я могу объяснить многое",
+    "imageUrl": "https://cv2.litres.ru/pub/c/cover_415/24434720.webp",
+    "authors": "Никола Тесла",
+    "year": "",
+    "rating": 4,
+    "isbn": "978-5-9955-0937-0"
+  },
+  {
+    "name": "Атомные привычки. Как приобрести хорошие привычки и избавиться от плохих",
+    "imageUrl": "https://cv7.litres.ru/pub/c/cover_415/48514275.webp",
+    "authors": "Джеймс Клир",
+    "year": 2018,
+    "rating": 5,
+    "isbn": "978-5-4461-1216-6"
+  },
+  {
+    "name": "Sapiens. Краткая история человечества",
+    "imageUrl": "https://cv1.litres.ru/pub/c/cover_415/22150614.webp",
+    "authors": "Юваль Ной Харари",
+    "year": 2011,
+    "rating": 4,
+    "isbn": "978-5-9068-3723-3"
+  }
+]

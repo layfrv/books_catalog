@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  height: 15vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 4px 15px;
+  padding: 0 30px;
+}
+
+.logo {
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  h2 {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+
+.links {
+  display: flex;
+  color: black;
+
+  li {
+    margin-left: 30px;
+  }
+}
+
+.dlt-books:hover {
+  cursor: pointer;
+}

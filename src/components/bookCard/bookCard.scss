@@ -1,0 +1,51 @@
+.book-card {
+  position: relative;
+  width: 290px;
+  height: 500px;
+  margin-top: 20px;
+
+  p {
+    margin-top: 5px;
+  }
+}
+
+.book-cover {
+  width: 240px;
+  height: 300px;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid rgb(227, 227, 227);
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.book-description {
+  margin-top: 20px;
+}
+
+.rating {
+  height: 34px;
+
+  margin: 10px 0px;
+
+  img {
+    width: 32px;
+    height: 32x;
+  }
+}
+
+.dlt-btn {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &:hover {
+    scale: 1.1;
+    transition: all 0.3s ease;
+  }
+}
