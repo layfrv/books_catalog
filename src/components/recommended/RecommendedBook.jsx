@@ -9,18 +9,23 @@ const RecommendedBook = () => {
 
   useEffect(() => {
     const selectRecommendedBook = (data) => {
-      const currentYear = new Date().getFullYear();
-      const highestRating = data.map((b) => b).sort((a, b) => b.rating - a.rating)[0]?.rating || 0;
+      const checkYear = new Date().getFullYear() - 3;
 
-      const goodBooks = data.filter((b) => b.year - 3 < currentYear && b.rating === highestRating);
+      const oldBooks = data.filter((a) => a.year < checkYear);
+      const highestRatingBook = oldBooks.sort((a, b) => (a.rating > b.rating ? 1 : 0))[0];
+      const maxRateBooks = [];
+      oldBooks.forEach((el) => {
+        if (el.rating === highestRatingBook.rating) {
+          maxRateBooks.push(el);
+        }
+      });
+      const randomGoodBookIndex = Math.floor(Math.random() * maxRateBooks.length);
 
-      const randomGoodBookIndex = Math.floor(Math.random() * goodBooks.length);
-
-      return goodBooks[randomGoodBookIndex];
+      console.log(maxRateBooks);
+      return maxRateBooks[randomGoodBookIndex];
     };
-
     setRecommendedBook(selectRecommendedBook(books));
-  }, []);
+  }, [books]);
 
   return (
     <div className='recommended'>
@@ -32,7 +37,7 @@ const RecommendedBook = () => {
           </div>
 
           <div className='card-description'>
-            <p className='title'>{recommendedBook.name}</p>
+            <h3 className='book-title'>{recommendedBook.name}</h3>
             <div className='rating'>
               {[...Array(recommendedBook.rating)].map((_, index) => (
                 <img key={index} src={star} alt='star' />

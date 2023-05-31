@@ -1,10 +1,10 @@
 .book-list-container {
   width: 1000px;
   height: fit-content;
-  margin: 30px auto 100px auto;
+  margin: 50px auto 50px auto;
 
   h2 {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 }
 
@@ -13,6 +13,5 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  gap: 60px;
-  justify-items: center;
+  gap: 35px;
 }

@@ -9,8 +9,8 @@ export const AppRouter = () => {
   return (
     <BrowserRoutes>
       <Route path='/' element={<MainPage />} />
+      <Route path='recommendedbook' element={<RecommendedPage />} />
       <Route path='addbooks' element={<AddPage />} />
-      <Route path='recommended-book' element={<RecommendedPage />} />
       <Route path='*' element={<NotFoundPage />} />
     </BrowserRoutes>
   );

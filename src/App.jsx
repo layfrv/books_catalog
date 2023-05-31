@@ -3,7 +3,6 @@ import './app.scss';
 import { BrowserRouter } from 'react-router-dom';
 import { collection, orderBy, query, onSnapshot } from 'firebase/firestore';
 import { AppRouter } from './AppRouter';
-import { Layout } from './components/Layout';
 import { db } from './firestore/firestoreConfig';
 import { BooksContext, DeleteContext } from './Context';
 import Footer from './components/footer/Footer';
@@ -14,7 +13,7 @@ import Loader from './components/loader';
 export const App = () => {
   const [books, setBooks] = useState([]);
   const [isLoading, setLoading] = useState(false);
-  const [isActiveBtn, setActiveBtn] = useState(false);
+  const [isActiveDeleteBtn, setActiveDeleteBtn] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -30,21 +29,23 @@ export const App = () => {
     return () => unsubscribe();
   }, []);
 
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <BrowserRouter>
-      <Layout>
-        <DeleteContext.Provider value={{ isActiveBtn, setActiveBtn }}>
-          <Header />
-          {isLoading ? (
-            <Loader />
-          ) : (
-            <BooksContext.Provider value={{ books, setBooks }}>
-              <AppRouter />
-            </BooksContext.Provider>
-          )}
-        </DeleteContext.Provider>
-        <Footer />
-      </Layout>
+      <DeleteContext.Provider value={{ isActiveDeleteBtn, setActiveDeleteBtn }}>
+        <Header />
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <BooksContext.Provider value={{ books, setBooks }}>
+            <AppRouter />
+          </BooksContext.Provider>
+        )}
+      </DeleteContext.Provider>
+      <Footer />
     </BrowserRouter>
   );
 };

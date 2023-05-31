@@ -5,10 +5,12 @@ import { db } from '../../firestore/firestoreConfig';
 
 const AddBook = () => {
   const [name, setName] = useState('');
-  const [rating, setRating] = useState(0);
-  const [year, setYear] = useState('');
-  const [author, setAuthor] = useState('');
+  const [authors, setAuthors] = useState('');
+  const [year, setYear] = useState(null);
+  const [rating, setRating] = useState(null);
   const [isbn, setIsbn] = useState('');
+
+  const nowDate = new Date().getFullYear();
 
   const imageUrl = 'https://e.nlrs.ru/imgs/covers/cover-removed-by-copyright.png';
 
@@ -20,15 +22,16 @@ const AddBook = () => {
         name,
         rating,
         year,
-        author,
+        authors,
         isbn,
         imageUrl,
       });
 
       setName('');
-      setRating('');
+      setAuthors('');
       setYear('');
-      setAuthor('');
+      setRating('');
+      setIsbn('');
 
       console.log('Book added successfully.');
     } catch (error) {
@@ -50,8 +53,8 @@ const AddBook = () => {
         />
         <input
           type='text'
-          value={author}
-          onChange={(e) => setAuthor(e.target.value)}
+          value={authors}
+          onChange={(e) => setAuthors(e.target.value)}
           placeholder='Автор'
           required
         />
@@ -59,6 +62,7 @@ const AddBook = () => {
           type='number'
           value={year}
           min={1800}
+          max={nowDate}
           onChange={(e) => setYear(Number(e.target.value))}
           placeholder='Год издания'
         />
