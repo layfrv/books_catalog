@@ -19,14 +19,30 @@
     font-weight: 700;
     font-size: 16px;
   }
+
+  &:hover {
+    scale: 1.05;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 .links {
   display: flex;
   color: black;
+  font-size: 14px;
 
   li {
-    margin-left: 30px;
+    margin-left: 35px;
+    width: 120px;
+
+    &:first-child {
+      width: 160px;
+    }
+
+    &:hover {
+      scale: 1.05;
+      transition: all 0.3s ease;
+    }
   }
 }
 

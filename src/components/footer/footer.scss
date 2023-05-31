@@ -7,9 +7,13 @@
   display: flex;
   padding: 0 30px;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 30px;
   height: inherit;
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(149, 157, 165, 0.1) 0px 4px 15px;
+
+  p {
+    font-size: 14px;
+  }
 }
