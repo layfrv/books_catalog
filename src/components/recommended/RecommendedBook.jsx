@@ -21,7 +21,6 @@ const RecommendedBook = () => {
       });
       const randomGoodBookIndex = Math.floor(Math.random() * maxRateBooks.length);
 
-      console.log(maxRateBooks);
       return maxRateBooks[randomGoodBookIndex];
     };
     setRecommendedBook(selectRecommendedBook(books));
