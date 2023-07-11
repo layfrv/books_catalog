@@ -1,6 +1,10 @@
-.recommended {
+.recommended-wrap {
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.recommended-block {
   width: 80%;
-  height: 450px;
   margin: 50px auto 0;
   padding: 50px;
   border: 1px rgb(233, 233, 233) solid;
@@ -27,7 +31,7 @@
 .card-description {
   margin-left: 35px;
   p {
-    line-height: 1.5;
+    line-height: 2;
   }
 }
 

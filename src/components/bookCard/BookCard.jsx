@@ -14,9 +14,9 @@ const BookCard = ({ book }) => {
   const deleteBook = async () => {
     try {
       await deleteDoc(doc(db, 'books', documentId));
-      console.log('Документ успешно удален');
+      console.log('Book deleted');
     } catch (error) {
-      console.error('Ошибка удаления документа:', error);
+      console.error('Error on delete:', error);
     }
   };
 

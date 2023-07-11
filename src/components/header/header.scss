@@ -1,14 +1,19 @@
-.navbar {
+.header {
   display: flex;
+  position: fixed;
+  z-index: 1;
   height: 70px;
   width: 100%;
+  top: 0;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
   box-shadow: rgba(149, 157, 165, 0.1) 0px 4px 15px;
   padding: 0 30px;
 }
 
 .logo {
+  transition: all 0.3s ease;
   a {
     display: flex;
     align-items: center;
@@ -34,6 +39,7 @@
   li {
     margin-left: 35px;
     width: 120px;
+    transition: all 0.3s ease;
 
     &:first-child {
       width: 160px;

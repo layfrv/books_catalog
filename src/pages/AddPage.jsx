@@ -3,9 +3,9 @@ import AddBook from '../components/addBook/AddBook';
 
 const AddPage = () => {
   return (
-    <>
+    <main className='content-wrapper'>
       <AddBook />
-    </>
+    </main>
   );
 };
 

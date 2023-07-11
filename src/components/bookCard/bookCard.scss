@@ -1,13 +1,15 @@
 .book-card {
   position: relative;
-  width: 250px;
+  width: 240px;
   height: max-content;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  transition: all 0.5s ease-out;
 
-  p {
-    margin-top: 5px;
+  &:hover {
+    scale: 1.02;
+    transition: all 0.2s ease-out;
   }
 }
 
@@ -16,6 +18,10 @@
   height: 300px;
   border-radius: 30px;
   border: 1px solid rgb(227, 227, 227);
+
+  img {
+    object-fit: fill;
+  }
 }
 
 .star {
@@ -27,6 +33,15 @@
 .book-description {
   margin-top: 15px;
   overflow-wrap: normal;
+
+  h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }
 
 .rating-card {
@@ -40,7 +55,7 @@
   height: 34px;
   position: absolute;
   top: 0;
-  right: -30px;
+  right: -45px;
 
   &:hover {
     scale: 1.1;
